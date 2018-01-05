@@ -1,0 +1,21 @@
+;; -*- mode: lisp -*-
+#+lispworks (setq system:*sg-default-size* 100000000)
+#+lispworks (set-default-character-element-type 'character)
+(in-package "CL-USER")
+(load-all-patches)
+(compile-file "~/BusFactor1/Software/Typing - Common Lisp Edition/main.lisp" :load t)
+(deliver #'main
+         #+:cocoa 
+         (create-macos-application-bundle
+          "~/BusFactor1/Software/Typing - Common Lisp Edition/Typing - Common Lisp Edition.app"
+          ;; Do not copy file associations...
+          :document-types nil
+          ;; ...or CFBundleIdentifier from the LispWorks bundle
+          :identifier "ca.busfactor1.typing-common-lisp-edition"
+          )
+         1
+         :interface :capi
+         :shake-shake-shake t
+         :split :resources
+         :startup-bitmap-file nil
+	 :license-info nil)
