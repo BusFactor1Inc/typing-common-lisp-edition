@@ -1,8 +1,6 @@
 Typing - Common Lisp Edition
 ---
 
-![Splash Screen](BusFactor1 Inc. - Splash Screen - 2017.png)
-
 Here you will find the source to 'Typing - Common Lisp Edition', a
 game of skill, speed and accuracy written in Common Lisp.
 
@@ -31,3 +29,6 @@ BusFactor1@icoud.com
 http://busfactor1.ca/
 
 2018
+
+![Splash Screen](https://github.com/BusFactor1Inc/typing-common-lisp-edition/blob/master/BusFactor1%20Inc.%20-%20Splash%20Screen%20-%202017.png "Splash Screen")
+
